@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-user-service
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+    sleuth:
+      enabled: true
+      sampler:
+        probability: 1.0
+  sample:
+    zipkin:
+      enabled: true
+
+
+server:
+  port: ${PORT:9001}
+
